@@ -1,0 +1,96 @@
+@import url('../../variables.css');
+
+.deleteModal__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color:var(--accent-colorL);
+	height: 40%;
+	width: 50%;
+	max-width: 500px;
+	opacity: 0.9;
+	padding: 1em;
+	border-radius: 9px;
+}
+
+.deleteModal__container > h2 {
+	color: var(--text-colorL);
+	text-shadow: 0px 0px 1px gray;
+}
+
+.delete-btn-container{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+
+.delete-btn {
+	background-color: var(--background-colorL);
+	border-radius: 8px;
+	font-size: 1.1rem;
+	color: var(--text-colorL);
+	cursor: pointer;
+}
+
+.delete-btn:hover {
+	background-color: #dbcdf0;
+}
+
+@media screen and ( max-width:600px ){
+	.deleteModal__container {
+		height: 45%;
+		width: 55%;
+	}
+
+	.deleteModal__container > h2 {
+		font-size: 1.3rem;
+	}
+
+	.delete-btn-container{
+		width: 100%;
+
+	}
+
+	.delete-btn {
+		font-size: 1rem;
+	}
+}
+
+
+@media screen and ( max-width:480px ){
+	.deleteModal__container {
+		height: 50%;
+		width: 60%;
+	}
+
+	.deleteModal__container > h2 {
+		font-size: 1.2rem;
+	}
+
+	.delete-btn {
+		font-size: .9rem;
+	}
+}
+
+@media screen and ( max-width:320px ) {
+	.deleteModal__container {
+		width: 75%;
+	}
+
+	.deleteModal__container > h2 {
+		font-size: 1.1rem;
+	}
+
+	.delete-btn {
+		font-size: .8rem;
+	}
+}
+
+

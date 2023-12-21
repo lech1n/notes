@@ -1,0 +1,107 @@
+@import url('../../variables.css');
+
+.editNote__section{
+	position: relative;
+	max-width: 1500px;
+	margin: 1rem auto;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .8em;
+	max-width: 1000px;
+	margin: 1rem auto;
+}
+
+button {
+	border:none;
+	background: transparent;
+	width: 80px;
+	height: 50px;
+}
+
+.icon{
+	font-size: 3rem;
+}
+
+.pink{
+	color: var(--accent-colorL);
+}
+
+.red {
+	color: red;
+}
+
+
+.save-btn{
+	background-color:var(--accent-colorL);
+	color: var(--text-colorD);
+	border-radius: 8px;
+	font-size: 1.1rem;
+}
+
+.editNote__container {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	height: 80%;
+	margin: 1rem auto;
+}
+
+.editNote__container > textarea {
+	resize: none;
+	padding: 1rem;
+	line-height: 1.2;
+	border: none;
+	border-top: 1.5px solid #ccc;
+	margin-top:.2em;
+	font-size: 1.1rem;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px #dedbd2;
+
+}
+
+
+.editNote__container > input {
+	padding: 1rem;
+	line-height: 1.2;
+	border: none;
+	border-bottom: 1.5px solid #ccc;
+	margin-bottom:.2em;
+	font-size: 1.3rem;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px #dedbd2;
+}
+
+
+
+@media screen and ( max-width:425px ){
+
+	button {
+		width: 65px;
+		height: 35px;
+	}
+
+	.icon{
+		font-size: 2rem;
+	}
+
+	.save-btn{
+		font-size: .9rem;
+	}
+
+	.editNote__container > textarea {
+		padding: .8rem;
+		line-height: 1.1;
+		font-size: .9rem;
+	}
+
+
+	.editNote__container > input {
+		padding: .8rem;
+		line-height: 1.1;
+		font-size: 1.1rem;
+	}
+}

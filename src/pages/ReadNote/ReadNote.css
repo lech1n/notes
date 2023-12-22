@@ -42,6 +42,7 @@
 	border-radius: 7px;
 	background-color: transparent;
 	color: var(--background-colorL);
+	font-size: 1rem;
 }
 
 .readNote__searchBar > input::placeholder {
@@ -140,8 +141,8 @@ main > h3 {
 	.readNote__logo > h1  {
 		font-size: 1rem;
 	}
-
 	main > h3 {
-		font-size: .9rem;
-	}
+	font-size: 1rem;
+}
+
 }

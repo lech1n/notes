@@ -57,7 +57,7 @@ button {
 	border: none;
 	border-top: 1.5px solid #ccc;
 	margin-top:.2em;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	border-radius: 10px;
 	box-shadow: 3px 3px 10px #dedbd2;
 	height: 75vh;
@@ -89,13 +89,13 @@ button {
 	}
 
 	.save-btn{
-		font-size: .9rem;
+		font-size: 1rem;
 	}
 
 	.editNote__container > textarea {
 		padding: .8rem;
 		line-height: 1.1;
-		font-size: .9rem;
+		font-size: 1.2rem;
 	}
 
 

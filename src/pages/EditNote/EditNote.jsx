@@ -70,10 +70,10 @@ const EditNote = ({ note, setNote }) => {
 		<section className="editNote__section">
 		<nav>
 		<Link to="/">
-		<button disabled={showModal}><FaArrowAltCircleLeft className="icon pink"/></button>
+		<button><FaArrowAltCircleLeft className="icon pink"/></button>
 		</Link>
-		<button disabled={showModal} className="save-btn" onClick={handleForm}>Save</button>
-		<button disabled={showModal} onClick={() => setShowModal(true)}><MdOutlineDeleteForever className="icon red"/></button>
+		<button className="save-btn" onClick={handleForm}>Save</button>
+		<button onClick={() => setShowModal(true)}><MdOutlineDeleteForever className="icon red"/></button>
 		</nav>
 
 		{ showModal && <DeleteModal setShowModal={setShowModal} handleDelete={handleDelete} /> }

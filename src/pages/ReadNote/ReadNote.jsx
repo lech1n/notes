@@ -39,7 +39,6 @@ const ReadNote = ({ note }) => {
     placeholder={filteredData.length === 0 ? "No matching notes" : "Search..."}
     value={inputValue} 
     onChange={(e) => { setInputValue(e.target.value)}}
-    autoFocus
     />}
     <button onClick={() => setIsSearchVisible(prevState => !prevState)}>
     { isSearchVisible ?  <IoClose className="icon"/> : <BiSearchAlt className="icon"/> }

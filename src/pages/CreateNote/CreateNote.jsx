@@ -52,7 +52,6 @@ const CreateNote = ({ setNote }) => {
 		placeholder="Add title" 
 		value={title} 
 		onChange={(e) => setTitle(e.target.value)} 
-		autoFocus
 		/>
 
 		<textarea placeholder="Add notes"

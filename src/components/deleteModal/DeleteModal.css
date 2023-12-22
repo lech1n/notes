@@ -73,9 +73,6 @@
 		font-size: 1.2rem;
 	}
 
-	.delete-btn {
-		font-size: .9rem;
-	}
 }
 
 @media screen and ( max-width:320px ) {
@@ -87,9 +84,6 @@
 		font-size: 1.1rem;
 	}
 
-	.delete-btn {
-		font-size: .8rem;
-	}
 }
 
 

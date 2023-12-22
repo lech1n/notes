@@ -36,6 +36,7 @@
 	font-size: 1.1rem;
 	color: var(--text-colorL);
 	cursor: pointer;
+	pointerEvents: auto;
 }
 
 .delete-btn:hover {

@@ -5,8 +5,13 @@ const DeleteModal = ({ setShowModal , handleDelete }) => {
 		<section className="deleteModal__container">
 		<h2>Are you sure you want to delete?</h2>
 		<div className="delete-btn-container">
-		<button className="delete-btn" onClick={() => {handleDelete(); setShowModal(false);}}>Yes</button>
-		<button className="delete-btn" onClick={() => setShowModal(false)}>No</button>
+	  <button className="delete-btn"
+    onTouchStart={() => { handleDelete(); setShowModal(false); }}
+    onClick={() => { handleDelete(); setShowModal(false); }}>
+     Yes
+   </button>
+
+  <button className="delete-btn" onTouchStart={() => setShowModal(false)}>No</button>
 		</div>
 		</section>
 		)
